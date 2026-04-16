@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Variables CSS globales ─────────────────────────────── */
+:root {
+  --color-primary: #C9A96E;
+  --color-secondary: #8FAF8F;
+  --color-bg: #FAF8F5;
+  --color-text: #2C2C2C;
+  --color-accent: #E8D5A3;
+
+  --font-serif: 'Cormorant Garamond', Georgia, serif;
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-hebrew: 'Frank Ruhl Libre', serif;
+}
+
+/* ── Reset & base ───────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ── Scrollbar personnalisée ────────────────────────────── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A07840;
+}
+
+/* ── Typographie hébraïque ──────────────────────────────── */
+.font-hebrew {
+  font-family: var(--font-hebrew);
+  direction: rtl;
+  unicode-bidi: embed;
+}
+
+/* ── Texte serif élégant ────────────────────────────────── */
+.font-serif-elegant {
+  font-family: var(--font-serif);
+}
+
+/* ── Séparateur décoratif ───────────────────────────────── */
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+.divider-ornament::before,
+.divider-ornament::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--color-primary), transparent);
+}
+
+/* ── Section padding standard ──────────────────────────── */
+.section-padding {
+  padding: 5rem 1.5rem;
+}
+@media (min-width: 768px) {
+  .section-padding {
+    padding: 7rem 3rem;
+  }
+}
+
+/* ── Animations d'entrée au scroll ─────────────────────── */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ── Gold shimmer sur les titres ────────────────────────── */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #C9A96E 0%, #E8D5A3 50%, #A07840 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* ── Carte flottante ────────────────────────────────────── */
+.card-float {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card-float:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.10);
+}
+
+/* ── Focus accessible ───────────────────────────────────── */
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* ── Sélection de texte ─────────────────────────────────── */
+::selection {
+  background: var(--color-accent);
+  color: var(--color-text);
+}

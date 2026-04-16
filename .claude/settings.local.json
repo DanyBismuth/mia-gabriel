@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm create:*)",
+      "Read(//usr/local/bin/**)",
+      "Read(//Users/rotten/.nvm/versions/**)",
+      "Read(//opt/homebrew/bin/**)",
+      "Bash(echo $PATH)",
+      "Bash(command -v brew)",
+      "Bash(command -v nvm)",
+      "Read(//Users/rotten/Applications/**)",
+      "Bash(brew install:*)",
+      "Bash(TaskOutput bqyvj5qht:*)",
+      "Bash(/usr/local/bin/node --version)",
+      "Bash(/opt/homebrew/bin/node --version)",
+      "Bash(npm install:*)",
+      "Bash(/usr/local/bin/npm install:*)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(/usr/local/bin/npm run:*)",
+      "WebFetch(domain:www.weddingsalomesamuel.fr)",
+      "mcp__Claude_Preview__preview_start",
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "mcp__Claude_in_Chrome__navigate",
+      "Bash(kill 87984 88013)",
+      "Bash(xargs ls:*)",
+      "mcp__Claude_in_Chrome__javascript_tool",
+      "mcp__Claude_in_Chrome__read_console_messages",
+      "Bash(ls -lt ~/Desktop/*.png ~/Desktop/*.jpg)",
+      "Bash(yt-dlp --version)",
+      "Bash(wait)",
+      "Bash(yt-dlp -x --audio-format mp3 --audio-quality 0 -o 'wedding_music.%\\(ext\\)s' 'https://www.youtube.com/watch?v=9JSn36U7d4w')",
+      "Bash(ffmpeg -version)",
+      "Bash(brew link:*)",
+      "Bash(/usr/local/Cellar/ffmpeg/8.1/bin/ffmpeg -i '/Users/rotten/Desktop/Gabriel et Mia/public/audio/wedding_music.webm' -vn -ab 192k -ar 44100 '/Users/rotten/Desktop/Gabriel et Mia/public/audio/wedding_music.mp3' -y)",
+      "Bash(/usr/local/Cellar/ffmpeg/8.1/bin/../../../bin/yt-dlp --get-title \"https://www.youtube.com/watch?v=9JSn36U7d4w\")",
+      "Bash(yt-dlp --get-title \"https://www.youtube.com/watch?v=9JSn36U7d4w\")",
+      "Bash(curl -s \"https://script.google.com/macros/s/AKfycbyVOLC_Chbkx_2l78SyA5mSjoj62dAh0ZQGoDIPR-5iRKRk7pSnLDsSf8mLLTSDeth9OA/exec\")",
+      "Bash(curl -sL \"https://script.google.com/macros/s/AKfycbyVOLC_Chbkx_2l78SyA5mSjoj62dAh0ZQGoDIPR-5iRKRk7pSnLDsSf8mLLTSDeth9OA/exec\")",
+      "Bash(curl -sL -X POST https://script.google.com/macros/s/AKfycbyVOLC_Chbkx_2l78SyA5mSjoj62dAh0ZQGoDIPR-5iRKRk7pSnLDsSf8mLLTSDeth9OA/exec -H 'Content-Type: application/json' -d '{\"nom\":\"TEST — Famille Cohen\",\"mairie\":\"Présent\\(e\\)\",\"mairie_nb\":\"4\",\"houpa\":\"Présent\\(e\\)\",\"houpa_nb\":\"4\",\"shabbat\":\"Absent\\(e\\)\",\"shabbat_nb\":\"\",\"message\":\"Test automatique — à supprimer\"}')"
+    ]
+  }
+}
